@@ -1,12 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Header from "./Header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <ThemeProvider theme={createTheme()}>
+      <div className="container">
+        <Header />
+      </div>
+    </ThemeProvider>
   );
 }
 
