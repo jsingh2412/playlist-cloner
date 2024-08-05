@@ -1,10 +1,11 @@
 import "./App.css";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import LoginButton from "./LoginButton/LoginButton";
 import logo from "./logo.png";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Stack } from "@mui/material";
+import LoginButton from "./LoginButton/LoginButton";
 import SpotifyAuth from "./SpotifyAuth/SpotifyAuth";
+import Dashboard from "./Dashboard/Dashboard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           </div>
           <Routes>
             <Route path="/" element={<LoginButton />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/callback" element={<SpotifyAuth />} />
           </Routes>
         </Stack>

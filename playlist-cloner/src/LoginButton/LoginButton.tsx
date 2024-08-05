@@ -1,6 +1,5 @@
 import { Button, Typography } from "@mui/material";
 import "./LoginButton.css";
-import { useParams } from "react-router-dom";
 
 const LoginButton = () => {
   const REDIRECT_URI = "http://localhost:3000/callback";
